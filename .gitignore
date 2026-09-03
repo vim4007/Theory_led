@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Word temp/lock files
+~$*.docx
+~$*.doc
+
+# Manuscript drafts (date-prefixed filenames, keep private)
+[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*.docx
+[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]*.doc
+
+# MATLAB cruft
+*.asv
+*.m~
+slprj/
