@@ -12,9 +12,6 @@ figures/           Final assembled figures (.ai, .pdf) and figure legends
 Supplementary/     Supplementary figure scripts and assembled panels
 ```
 
-- [`analysis/README.md`](analysis/README.md) — how the code is organized, conventions, and how to run it
-- [`data/README.md`](data/README.md) — what every data file contains and where it came from
-
 ## Reproducibility
 
 ```matlab
@@ -22,13 +19,9 @@ addpath(genpath('/path/to/Theory_led'));
 Fig1    % then fig2, Fig3, fig4, Fig5
 ```
 
-Scripts locate the repository root relative to their own location, so no paths need editing — but the repository must be on the MATLAB path and scripts must stay at `analysis/<FigN>/`. Each script is a cell script: run the whole file, or step through it section by section to build one panel at a time. Panels open as figure windows and summary statistics are printed to the console; final figures were exported and assembled in Illustrator.
-
-Data files are read-only for the figure scripts. The single exception is the BIOLOG preprocessing in `analysis/Fig3/`, which regenerates `data/Biolog/Biolog_growth_matrix.xlsx`; its output is already committed, so it does not need to be re-run.
-
 ## Dependencies
 
-MATLAB R2022b or newer
+MATLAB R2020b or newer
 Required toolboxes: Statistics and Machine Learning Toolbox
 
 ## Citation
